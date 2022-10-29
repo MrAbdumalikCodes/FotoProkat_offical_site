@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+body{
+    font-family: 'Ubuntu';
+    padding: 0;
+    margin: 0;
+}
+
+@import './header';
+@import './photo_one';
+@import './info';
+@import './price_mobile';
+@import './foto_prokat';
+@import './camera_price';
+@import './warrantly.scss';
+@import './news.scss';
+@import './box_map.scss';
+@import './footer';     

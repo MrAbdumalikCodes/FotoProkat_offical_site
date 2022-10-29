@@ -1,0 +1,204 @@
+header{
+    .header_container{
+        width: 100%;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        .title{
+            padding-left: 135px;
+            h1{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 21px;
+                line-height: 26px;
+                color: #000000;
+            }
+            span{
+                background: linear-gradient(270deg, #8EE901 0%, #4F9C2C 99.06%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+        .options{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+            ul{
+                display: flex;
+                list-style: none;
+                a{
+                    color: #000000;
+                    text-decoration: none;
+                    margin-right: 24px;
+                    transition: .5s;
+                }
+                li{
+                    transition: .6s;
+                }
+                li:hover{
+                    transform: scale(.9);
+                    text-decoration: underline;
+                }
+            }
+        }
+        .icons{
+            display: flex;
+            .contents{
+                border-left: 1px solid #EFEFEF;
+                border-right: 1px solid #EFEFEF;
+                padding:27px;
+                a{
+                    img{
+                        transition: .3s;
+
+                    }
+                }
+                cursor: pointer;
+                .message{
+                    z-index: 1;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                    margin-top: -13px;
+                    margin-left: 11px;
+                    position: absolute;
+                    text-align: center;
+                    width: 20px;
+                    height: 20px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+                    border-radius: 100px;
+                    cursor: pointer;
+                }
+                .message_green{
+                    z-index: 1;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                    margin-top: -13px;
+                    margin-left: 11px;
+                    position: absolute;
+                    text-align: center;
+                    width: 20px;
+                    height: 20px;
+                    background: #FFFFFF;
+                    color: #FFFFFF;
+                    background: linear-gradient(270deg, #8EE901 0%, #4F9C2C 99.06%);
+                    border-radius: 100px;
+                    cursor: pointer;
+                }
+                img:hover{
+                    transform: scale(1.3);
+                    z-index: -1;
+                }
+            }
+        }
+    }
+    .header_media{
+        display: none;
+        img{
+            display: none;
+        }
+    }
+    .header_tablet{
+        display: none;
+    }
+}
+@media only screen and(max-width:900px){
+    header{
+        .header_container{
+            display: none;
+        }
+        .header_media{
+            margin: 0 auto;
+            display: flex;
+            width: auto;
+            padding: 20px 0px 20px 0px;
+            justify-content: space-between;
+            .icon_mobile{
+                width: 120px;
+                display: flex;
+                margin-left: 20px;
+                margin-right: 20px;
+                align-items:center;
+                justify-content: space-around;
+                img{
+                    transition: .4s;
+                }
+                img:hover{
+                    transform: scale(.9);
+                }
+            }
+            img{
+                display: flex;
+            }
+            .title_mobile{
+                font-style: normal;
+                font-weight: 800;
+                font-size: 18px;
+                line-height: 26px;
+                color: #000000;
+                font-family: 'Montserrat';
+                span{
+                    background: linear-gradient(270deg, #8EE901 0%, #4F9C2C 99.06%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px){
+    header{
+        .header_container{
+            display: none;
+        }
+        .header_media{
+            margin: 0 auto;
+            display: flex;
+            width: 100%;
+            padding: 14px 0px 14px 0px;
+            justify-content: space-between;
+            .icon_mobile{
+                width: 120px;
+                display: flex;
+                margin-left: 20px;
+                margin-right: 20px;
+                align-items:center;
+                justify-content: space-around;
+                img{
+                    transition: .4s;
+                }
+                img:hover{
+                    transform: scale(.9);
+                }
+            }
+            img{
+                display: flex;
+            }
+            .title_mobile{
+                font-style: normal;
+                font-weight: 800;
+                font-size: 18px;
+                line-height: 26px;
+                color: #000000;
+                font-family: 'Montserrat';
+                span{
+                    background: linear-gradient(270deg, #8EE901 0%, #4F9C2C 99.06%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+}

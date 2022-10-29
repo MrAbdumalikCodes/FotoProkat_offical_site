@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu';
+}
+main{
+    section{
+        .camera_price{
+            width: 100%;
+            height: 426px;
+            border-top:1px solid #EFEFEF;
+            .title{
+                width: 1125px;
+                height: 20px;
+                margin: 0 auto;
+                margin-top: 74px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000000;
+                margin-bottom: 26px;
+            }
+            .boxs_card{
+                display: flex;
+                gap: 30px;
+                justify-content: center;
+                .card_info{
+                    width: 255px;
+                    height: 305px;
+                    background: #FFFFFF;
+                    border: 1px solid #EFEFEF;
+                    display: flex;
+                    justify-content:center;
+                    flex-direction: column;
+                    .start_photo{
+                        justify-content: center;
+                        gap: 36px;
+                        display: flex;
+                        .icon_cam{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 17px;
+                            img{
+                                transition: .5s;
+                                cursor: pointer;
+                            }
+                            img:hover{
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                    .end_part{
+                        margin-left: 20px;
+                        .title_textt{
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #000000;
+                        }
+                        .white_word{
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #75758A;
+                        }
+                        .price_word{
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #60B021;
+                            span{
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #60B021;
+                            }
+                        }
+                    }
+                    .part_btn{
+                        margin: 0 auto;
+                        margin-top: 10px;
+                        width: 215px;
+                        height: 40px;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 16px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        background: #FFFFFF;
+                        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+                        border-radius: 100px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: .5s;
+                        cursor: pointer;
+                        a{
+                            color: #000000;
+                            text-decoration: none;
+                        }
+                    }
+                    .part_btn:hover{
+                        transform: scale(.9);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@import './header';  
+@import './container_section';     
+@import './footer';     
